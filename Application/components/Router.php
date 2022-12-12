@@ -3,7 +3,6 @@
 namespace Application\components;
 
 use Application\components\Request;
-use Application\components\Response;
 
 class Router
 {
@@ -40,7 +39,7 @@ class Router
             }, $is_matched);
 
 
-            $callback(new Request($paramtrs), new Response());
+            $callback(new Request($paramtrs));
         }
 
     }
